@@ -4,7 +4,7 @@ import session from "express-session";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 // import {productRouter} from "./routes/productRoute.js";
-import { storeRouter } from "./routes/storeroute.js";
+import { storerouter } from "./routes/storeroute.js";
 import dbConnect from "./config/db.js";
 const app = express();
 dotenv.config()
@@ -22,7 +22,7 @@ app.use(
   }),
 );
 
-app.use("/", storeRouter);
+app.use("/", storerouter);
 // app.use("/auth", authRouter);
 // app.use("/products", productRouter);
 // app.use("/users", userRouter);
