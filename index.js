@@ -4,7 +4,7 @@ import session from "express-session";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 // import {productRouter} from "./routes/productRoute.js";
-import { storerouter } from "./routes/storeroute.js";
+import storerouter  from "./routes/storeroute.js";
 import dbConnect from "./config/db.js";
 const app = express();
 dotenv.config()
