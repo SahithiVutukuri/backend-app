@@ -5,7 +5,9 @@ const productSchema = mongoose.Schema({
   price: { type: Number, required: true },
   imageUrl: { type: String },
 });
-const productmodel = mongoose.model("products", productSchema);
+const productModel = mongoose.model("products", productSchema);
+
+export default productModel;
 
 
 
@@ -14,4 +16,3 @@ const productmodel = mongoose.model("products", productSchema);
 //     {id: 2,name: "product1",price:200},
 //     {id: 1,name: "product1",price:300},
 // ];
-export default productmodel
