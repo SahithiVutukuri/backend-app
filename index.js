@@ -6,10 +6,10 @@ import dotenv from "dotenv";
 import { authenticateAdmin } from "./middleware/auth.js";
 import dbConnect from "./config/db.js";
 import productRouter from "./routes/productroute.js";
-import storeRouter from "./routes/storeRoute.js";
-import homeRouter from "./routes/homeRoute.js";
-import authRouter from "./routes/authRoute.js";
-import userRouter from "./routes/userRoute.js";
+import storeRouter from "./routes/storeroute.js";
+import homeRouter from "./routes/homeroute.js";
+import authRouter from "./routes/authroute.js";
+import userRouter from "./routes/userroute.js";
 
 const app = express();
 app.use(cors());
